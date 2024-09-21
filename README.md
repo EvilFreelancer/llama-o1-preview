@@ -45,7 +45,7 @@
 
 ## Ссылки
 
-Про Chain of Thous промтинг:
+Про Chain of Thoughts промтинг:
 
 - Automatic Chain of Thought Prompting in Large Language Models [arxiv:2210.03493](https://arxiv.org/abs/2210.03493)
 - Chain-of-Thought Prompting Elicits Reasoning in Large Language
@@ -56,6 +56,6 @@ OpenAI [тут](https://platform.openai.com/docs/guides/reasoning?reasoning-prom
 
 Тематически близкие публикации на arxiv (увидел ссылки на канале [DealerAI](https://t.me/dealerAI)):
 
-- [2401.08967](https://arxiv.org/abs/2401.08967)
-- [2402.05808](https://arxiv.org/abs/2402.05808)
-- [2407.21787](https://arxiv.org/abs/2407.21787)
+- ReFT: Reasoning with Reinforced Fine-Tuning [arxiv:2401.08967](https://arxiv.org/abs/2401.08967)
+- Training Large Language Models for Reasoning through Reverse Curriculum Reinforcement Learning [arxiv:2402.05808](https://arxiv.org/abs/2402.05808)
+- Large Language Monkeys: Scaling Inference Compute with Repeated Sampling [arxiv:2407.21787](https://arxiv.org/abs/2407.21787)
