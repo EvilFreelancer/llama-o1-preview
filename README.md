@@ -59,3 +59,26 @@ OpenAI [тут](https://platform.openai.com/docs/guides/reasoning?reasoning-prom
 - ReFT: Reasoning with Reinforced Fine-Tuning [arxiv:2401.08967](https://arxiv.org/abs/2401.08967)
 - Training Large Language Models for Reasoning through Reverse Curriculum Reinforcement Learning [arxiv:2402.05808](https://arxiv.org/abs/2402.05808)
 - Large Language Monkeys: Scaling Inference Compute with Repeated Sampling [arxiv:2407.21787](https://arxiv.org/abs/2407.21787)
+
+## Лицензия
+
+Этот проект лицензирован на условиях лицензии MIT. Подробности в файле [LICENSE](./LICENSE).
+
+## Цитирование
+
+Если вы используете этот проект в своих исследованиях или работе, пожалуйста, укажите ссылку на него следующим образом:
+
+```text
+[Pavel Rykov]. (2024). Llama o1-preview experiment. GitHub. https://github.com/EvilFreelancer/llama-o1-preview
+```
+
+Альтернатива в формате BibTeX:
+
+```text
+@misc{pavelrykov2024llamao1preview,
+  author = {Pavel Rykov},
+  title  = {Llama o1-preview experiment},
+  year   = {2024},
+  url    = {https://github.com/EvilFreelancer/llama-o1-preview}
+}
+```
