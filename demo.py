@@ -5,7 +5,8 @@ cot_prompt = open('cot-prompt.txt', 'r').read()
 basic_prompt = open('basic-prompt.txt', 'r').read()
 
 cot_model = 'gemma2:9b'
-basic_model = 'gemma2:9b'
+# basic_model = 'gemma2:9b'
+basic_model = 'llama3.1:8b-instruct-q4_0'
 
 client = Client(host='http://gpu02:11434')
 
@@ -29,14 +30,14 @@ while True:
     cot_history.add_user_message(user_message)
     cot_messages = cot_history.get_messages()
 
-    print(cot_messages)
+    # print(cot_messages)
 
-    cot_response = client.chat(model=cot_model, messages=cot_messages)
+    cot_response = client.chat(model=cot_model, messages=cot_messages, options={"temperature": 0.5})
     cot_output = cot_response['message']['content']
 
     print(">>>>>>>>>>THINKING>>>>>>>>>>>>")
     print(cot_output)
-    print(">>>>>>>>>/THINKING>>>>>>>>>>>>")
+    print(">>>>>>>>>/THINKING>>>>>>>>>>>>\n")
 
     # Add messages
     basic_history.add_user_message(user_message)
@@ -48,7 +49,7 @@ while True:
 
     print(basic_messages)
 
-    basic_response = client.chat(model=basic_model, messages=basic_messages)
+    basic_response = client.chat(model=basic_model, messages=basic_messages, options={"temperature": 0.5})
     output = basic_response['message']['content']
     basic_history.add_assistant_message(output)
 
